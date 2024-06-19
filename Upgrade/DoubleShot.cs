@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExampleMod.Upgrade
+namespace FootballerMonkeyMod.Upgrade
 {
     internal class DoubleShot : UPP<ExampleFourthPath>
     {

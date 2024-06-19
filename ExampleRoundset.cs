@@ -1,10 +1,10 @@
 ﻿using BTD_Mod_Helper.Api.Bloons;
 using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Extensions;
-using ExampleMod.Bloons;
+using FootballerMonkeyMod.Bloons;
 using Il2CppAssets.Scripts.Models.Rounds;
 
-namespace ExampleMod
+namespace FootballerMonkeyMod
 {
     internal class ExampleRoundset : ModRoundSet
     {

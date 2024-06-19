@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
-		<RootNamespace>ExampleMod</RootNamespace>
+		<RootNamespace>FootballerMonkeyMod</RootNamespace>
 		<Configurations>Debug;Release</Configurations>
 		<Nullable>enable</Nullable>
-		<AssemblyName>ExampleMod</AssemblyName>
+		<AssemblyName>FootballerMonkeyMod</AssemblyName>
 		<LangVersion>latest</LangVersion>
 		<Optimize>False</Optimize>
 		<DebugType>embedded</DebugType>

@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExampleMod.Upgrade
+namespace FootballerMonkeyMod.Upgrade
 {
     internal class ExamplePathExtension : PathPlusPlus
     {
-        public override string Tower => TowerType.DartMonkey; // TowerID<ExampleMonkey>();
+        public override string Tower => TowerType.DartMonkey; // TowerID<FootballerMonkey>();
 
         public override int ExtendVanillaPath => Top;
     }

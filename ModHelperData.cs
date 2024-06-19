@@ -1,15 +1,15 @@
-namespace ExampleMod;
+namespace FootballerMonkeyMod;
 
 public static class ModHelperData
 {
     public const string WorksOnVersion = "39.0";
-    public const string Version = "1.9.0";
-    public const string Name = "(Unofficial) Example Mod";
+    public const string Version = "1.0.0";
+    public const string Name = "Footballer Monkey";
 
-    public const string Description = "An Example Mod For my Youtube Series, look at the github for more info. If you have any questions contact me on discord: @lerpmcgerk";
+    public const string Description = "Play football in BTD6";
 
-    public const string RepoOwner = "DarkTerraYT"; // TODO add your github username hero, also in the download url in README.md
-    public const string RepoName = "ExampleMod"; // TODO add your repo name here, also in the download url in README.md
+    public const string RepoOwner = "238SAMIxD";
+    public const string RepoName = "ExampleMod";
 
     public const string Dependencies = "doombubbles/paths-plus-plus"; // Only needed if your mod requires a different one
 }

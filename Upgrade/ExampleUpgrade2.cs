@@ -6,9 +6,9 @@ using Il2CppAssets.Scripts.Models.Towers.Filters;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Unity;
 
-namespace ExampleMod.Upgrade
+namespace FootballerMonkeyMod.Upgrade
 {
-    internal class ExampleUpgrade2 : ModUpgrade<ExampleMonkey>
+    internal class ExampleUpgrade2 : ModUpgrade<FootballerMonkey>
     {
         public override int Path => MIDDLE; //You can use TOP, MIDDLE or BOTTOM
 

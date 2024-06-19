@@ -1,5 +1,5 @@
 ﻿using BTD_Mod_Helper.Extensions;
-using ExampleMod.Display;
+using FootballerMonkeyMod.Display;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExampleMod.Upgrade
+namespace FootballerMonkeyMod.Upgrade
 {
     internal class MegaJuggernaut : UPP<ExamplePathExtension> //UPP is a custom class that I added for sake of time, you can change it to UpgradePlusPlus<ExamplePathExtension>.
     {

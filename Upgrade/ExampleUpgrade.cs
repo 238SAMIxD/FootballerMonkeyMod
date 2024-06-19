@@ -7,9 +7,9 @@ using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors;
 using Il2CppAssets.Scripts.Unity;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 
-namespace ExampleMod.Upgrade
+namespace FootballerMonkeyMod.Upgrade
 {
-    internal class ExampleUpgrade : ModUpgrade<ExampleMonkey>
+    internal class ExampleUpgrade : ModUpgrade<FootballerMonkey>
     {
         public override int Path => MIDDLE; //You can use TOP, MIDDLE or BOTTOM
 

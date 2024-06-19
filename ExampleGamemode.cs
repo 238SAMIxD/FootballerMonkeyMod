@@ -4,7 +4,7 @@ using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models;
 using Il2CppAssets.Scripts.Models.Difficulty;
 
-namespace ExampleMod
+namespace FootballerMonkeyMod
 {
     internal class ExampleGamemode : ModGameMode
     {

@@ -1,22 +1,22 @@
 using MelonLoader;
 using BTD_Mod_Helper;
-using ExampleMod;
+using FootballerMonkeyMod;
 using BTD_Mod_Helper.Api.ModOptions;
 using Il2CppAssets.Scripts.Simulation.Towers.Weapons;
 using BTD_Mod_Helper.Extensions;
 using BTD_Mod_Helper.Api;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(ExampleMod.ExampleMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
+[assembly: MelonInfo(typeof(FootballerMonkeyMod.FootballerMonkeyMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
-namespace ExampleMod;
+namespace FootballerMonkeyMod;
 
-public class ExampleMod : BloonsTD6Mod
+public class FootballerMonkeyMod : BloonsTD6Mod
 {
     public override void OnApplicationStart()
     {
-        ModHelper.Msg<ExampleMod>("ExampleMod loaded!");
+        ModHelper.Msg<FootballerMonkeyMod>("Footballer Monkey Mod loaded!");
     }
 
     public static readonly ModSettingCategory Category = new("Example Category")
@@ -60,10 +60,10 @@ public class ExampleMod : BloonsTD6Mod
     {
         var tower = weapon.attack.tower;
 
-        if(tower.towerModel.baseId == ModContent.TowerID<CustomModelTower>())
-        {
-            //tower.GetUnityDisplayNode().gameObject.GetComponent<Animator>().SetTrigger("Attack");
-            tower.GetUnityDisplayNode().animationComponent.SetTrigger("Attack");
-        }
+        //if(tower.towerModel.baseId == ModContent.TowerID<CustomModelTower>())
+        //{
+        //    //tower.GetUnityDisplayNode().gameObject.GetComponent<Animator>().SetTrigger("Attack");
+        //    tower.GetUnityDisplayNode().animationComponent.SetTrigger("Attack");
+        //}
     }
 }

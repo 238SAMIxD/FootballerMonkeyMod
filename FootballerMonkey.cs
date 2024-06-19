@@ -1,22 +1,22 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using ExampleMod.Display;
+using FootballerMonkeyMod.Display;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.TowerSets;
 
-namespace ExampleMod
+namespace FootballerMonkeyMod
 {
-    internal class ExampleMonkey : ModTower
+    internal class FootballerMonkey : ModTower
     {
         public override TowerSet TowerSet => TowerSet.Primary;
 
-        public override string BaseTower => TowerType.SuperMonkey; // You can replace TowerType.SuperMonkey with "SuperMonkey" or "SuperMonkey-005"
+        public override string BaseTower => TowerType.DartMonkey; // You can replace TowerType.SuperMonkey with "SuperMonkey" or "SuperMonkey-005"
 
-        public override int Cost => 1050;
+        public override int Cost => 500;
 
-        public override string Description => "Cool Tower Dude Yes";
+        public override string Description => "Play the ball";
 
-        public override string DisplayName => "Example Monkey"; // This is by default Example Monkey as the Mod Helper automatically puts spaces in-between the uppercase letters in the class name, it is this way for Towers, Heroes, Upgrades, and Paragons
+        public override string DisplayName => "Footballer Monkey"; // This is by default Example Monkey as the Mod Helper automatically puts spaces in-between the uppercase letters in the class name, it is this way for Towers, Heroes, Upgrades, and Paragons
 
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
@@ -35,7 +35,7 @@ namespace ExampleMod
             projectileModel.pierce = 10;
             projectileModel.GetDamageModel().damage = 4;
 
-            towerModel.ApplyDisplay<ExampleMonkeyDisplay>();
+            towerModel.ApplyDisplay<FootballerMonkeyDisplay>();
             projectileModel.ApplyDisplay<ExampleProjectileDisplay>();
         }
     }

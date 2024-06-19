@@ -4,7 +4,7 @@ using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Bloons;
 using System.Collections.Generic;
 
-namespace ExampleMod.Bloons
+namespace FootballerMonkeyMod.Bloons
 {
     internal class ExampleBloon : ModBloon
     {

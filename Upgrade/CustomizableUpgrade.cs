@@ -5,17 +5,17 @@ using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities;
 using Il2CppAssets.Scripts.Unity;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
-using static ExampleMod.ExampleMod;
+using static FootballerMonkeyMod.FootballerMonkeyMod;
 
-namespace ExampleMod.Upgrade
+namespace FootballerMonkeyMod.Upgrade
 {
-    internal class CustomizableUpgrade : ModUpgrade<ExampleMonkey>
+    internal class CustomizableUpgrade : ModUpgrade<FootballerMonkey>
     {
         public override int Path => MIDDLE; //You can use TOP, MIDDLE or BOTTOM
 
         public override int Tier => 3; // 1, 2, 3, 4 or 5
 
-        public override int Cost => ExampleMod.Cost;
+        public override int Cost => FootballerMonkeyMod.Cost;
 
         public override string Description => "Customizable, Made for Episode 4";
 

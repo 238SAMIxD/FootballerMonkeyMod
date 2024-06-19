@@ -2,7 +2,7 @@
 using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using ExampleMod.Bloons;
+using FootballerMonkeyMod.Bloons;
 using Il2CppAssets.Scripts.Unity;
 using Il2CppAssets.Scripts.Unity.Display;
 using System;
@@ -12,20 +12,20 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace ExampleMod.Display
+namespace FootballerMonkeyMod.Display
 {
-    internal class ExampleMonkeyDisplay : ModDisplay
+    internal class FootballerMonkeyDisplay : ModDisplay
     {
-        public override string BaseDisplay => GetDisplay("SuperMonkey");
+        public override string BaseDisplay => GetDisplay("DartMonkey");
 
         public override void ModifyDisplayNode(UnityDisplayNode node)
         {
-            // Set2DTexture(node, "ExampleMonkey2dDisplay"); //Change "ExampleMonkey2dDisplay" With the name of your texture
+            // Set2DTexture(node, "FootballerMonkey2dDisplay"); //Change "FootballerMonkey2dDisplay" With the name of your texture
             
             for (int i = 0; i < node.GetMeshRenderers().Count; i++)
             {
                 // node.SaveMeshTexture(i); // Saves the mesh texture to %APPDATA%\..\LocalLow\NinjaKiwi\BloonsTD6\
-                SetMeshTexture(node, "ExampleMonkeyDisplay" + i, i);
+                SetMeshTexture(node, "FootballerMonkeyDisplay" + i, i);
             }
         }
     }
@@ -35,7 +35,7 @@ namespace ExampleMod.Display
 
         public override void ModifyDisplayNode(UnityDisplayNode node)
         {
-            Set2DTexture(node, "ExampleProjectileDisplay"); //Change "ExampleProjectileDisplay" With the name of your texture
+            Set2DTexture(node, "BallProjectileDisplay"); //Change "ExampleProjectileDisplay" With the name of your texture
         }
     }
 
