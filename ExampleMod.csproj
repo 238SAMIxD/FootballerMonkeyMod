@@ -1,22 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
-        <RootNamespace>ExampleMod</RootNamespace>
-        <Configurations>Debug;Release</Configurations>
-        <Nullable>enable</Nullable>
-        <AssemblyName>ExampleMod</AssemblyName>
-        <LangVersion>latest</LangVersion>
-        <Optimize>False</Optimize>
-        <DebugType>embedded</DebugType>
-    </PropertyGroup>
-    <ItemGroup>
-        <Content Include=".github\workflows\build.yml" />
-    </ItemGroup>
-    <ItemGroup>
-      <Reference Include="PathsPlusPlus">
-        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\BloonsTD6\Mods\PathsPlusPlus.dll</HintPath>
-      </Reference>
-    </ItemGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>ExampleMod</RootNamespace>
+		<Configurations>Debug;Release</Configurations>
+		<Nullable>enable</Nullable>
+		<AssemblyName>ExampleMod</AssemblyName>
+		<LangVersion>latest</LangVersion>
+		<Optimize>False</Optimize>
+		<DebugType>embedded</DebugType>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include=".github\workflows\build.yml" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="PathsPlusPlus">
+			<HintPath>C:\Program Files\Epic Games\BloonsTD6\Mods\PathsPlusPlus.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="TopPath\" />
+		<Folder Include="MidPath\" />
+		<Folder Include="BotPath\" />
+	</ItemGroup>
 
-    <Import Project="..\btd6.targets" />
+	<Import Project="C:\Users\User\Documents\BTD6 Mod Sources\btd6.targets" />
 </Project>
