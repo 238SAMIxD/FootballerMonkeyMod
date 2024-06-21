@@ -36,7 +36,7 @@ namespace FootballerMonkeyMod
             projectileModel.GetDamageModel().damage = 4;
 
             towerModel.ApplyDisplay<FootballerMonkeyDisplay>();
-            projectileModel.ApplyDisplay<ExampleProjectileDisplay>();
+            projectileModel.ApplyDisplay<BallProjectileDisplay>();
         }
     }
 }

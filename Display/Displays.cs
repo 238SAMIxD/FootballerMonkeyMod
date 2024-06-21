@@ -12,42 +12,34 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace FootballerMonkeyMod.Display
-{
-    internal class FootballerMonkeyDisplay : ModDisplay
-    {
+namespace FootballerMonkeyMod.Display {
+    internal class FootballerMonkeyDisplay : ModDisplay {
         public override string BaseDisplay => GetDisplay("DartMonkey");
 
-        public override void ModifyDisplayNode(UnityDisplayNode node)
-        {
-            // Set2DTexture(node, "FootballerMonkey2dDisplay"); //Change "FootballerMonkey2dDisplay" With the name of your texture
-            
-            for (int i = 0; i < node.GetMeshRenderers().Count; i++)
-            {
+        public override void ModifyDisplayNode(UnityDisplayNode node) {
+            // Set2DTexture(node, "FootballerMonkey2dDisplay");
+
+            for(int i = 0; i < node.GetMeshRenderers().Count; i++) {
                 // node.SaveMeshTexture(i); // Saves the mesh texture to %APPDATA%\..\LocalLow\NinjaKiwi\BloonsTD6\
                 SetMeshTexture(node, "FootballerMonkeyDisplay" + i, i);
             }
         }
     }
-    internal class ExampleProjectileDisplay : ModDisplay
-    {
+    internal class BallProjectileDisplay : ModDisplay {
         public override string BaseDisplay => Generic2dDisplay;
 
-        public override void ModifyDisplayNode(UnityDisplayNode node)
-        {
-            Set2DTexture(node, "BallProjectileDisplay"); //Change "ExampleProjectileDisplay" With the name of your texture
+        public override void ModifyDisplayNode(UnityDisplayNode node) {
+            Set2DTexture(node, "BallProjectileDisplay");
         }
     }
 
-    internal class ExampleBloonDisplay : ModBloonDisplay<ExampleBloon>
-    {
+    internal class ExampleBloonDisplay : ModBloonDisplay<ExampleBloon> {
         public override string BaseDisplay => GetBloonDisplay(BloonType.Lead);
 
         public override float Scale => 2;
     }
 
-    internal class ExampleBloonDamage1Display : ModBloonDisplay<ExampleBloon>
-    {
+    internal class ExampleBloonDamage1Display : ModBloonDisplay<ExampleBloon> {
         public override string BaseDisplay => GetBloonDisplay(BloonType.Lead);
 
         public override float Scale => 1.75f;
@@ -55,8 +47,7 @@ namespace FootballerMonkeyMod.Display
         public override int Damage => 1;
     }
 
-    internal class ExampleBloonDamage2Display : ModBloonDisplay<ExampleBloon>
-    {
+    internal class ExampleBloonDamage2Display : ModBloonDisplay<ExampleBloon> {
         public override string BaseDisplay => GetBloonDisplay(BloonType.Lead);
 
         public override float Scale => 1.5f;
@@ -64,8 +55,7 @@ namespace FootballerMonkeyMod.Display
         public override int Damage => 2;
     }
 
-    internal class ExampleBloonDamage3Display : ModBloonDisplay<ExampleBloon>
-    {
+    internal class ExampleBloonDamage3Display : ModBloonDisplay<ExampleBloon> {
         public override string BaseDisplay => GetBloonDisplay(BloonType.Lead);
 
         public override float Scale => 1.25f;
@@ -73,14 +63,12 @@ namespace FootballerMonkeyMod.Display
         public override int Damage => 3;
     }
 
-    internal class MegaJuggernautDisplay : ModDisplay
-    {
+    internal class MegaJuggernautDisplay : ModDisplay {
         public override string BaseDisplay => Game.instance.model.GetTowerFromId("DartMonkey-500").GetWeapon().projectile.display.GUID;
 
-        public override void ModifyDisplayNode(UnityDisplayNode node)
-        {
-            for(int i = 0; i < node.GetMeshRenderers().Count; i++)
-            {
+        public override void ModifyDisplayNode(UnityDisplayNode node) {
+            for(int i = 0; i < node.GetMeshRenderers().Count; i++) {
+                node.SaveMeshTexture(i); // Saves the mesh texture to %APPDATA%\..\LocalLow\NinjaKiwi\BloonsTD6\
                 SetMeshTexture(node, "MegaJuggernautDiffuse", i);
                 SetMeshOutlineColor(node, Color.blue);
             }
