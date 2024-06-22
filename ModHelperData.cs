@@ -9,7 +9,7 @@ public static class ModHelperData
     public const string Description = "Play football in BTD6";
 
     public const string RepoOwner = "238SAMIxD";
-    public const string RepoName = "ExampleMod";
+    public const string RepoName = "FootballerMonkeyMod";
 
     public const string Dependencies = "doombubbles/paths-plus-plus"; // Only needed if your mod requires a different one
 }

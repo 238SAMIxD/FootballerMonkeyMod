@@ -25,15 +25,16 @@ namespace FootballerMonkeyMod
             var projectileModel = weaponModel.projectile;
 
             // range
-            towerModel.range += 25;
-            attackModel.range += 25;
+            const float range = 50;
+            towerModel.range = range;
+            attackModel.range = range;
 
             // attack speed
             weaponModel.rate *= 3;
 
             // damage + pierce
-            projectileModel.pierce = 10;
-            projectileModel.GetDamageModel().damage = 4;
+            projectileModel.pierce = 3;
+            projectileModel.GetDamageModel().damage = 2;
 
             towerModel.ApplyDisplay<FootballerMonkeyDisplay>();
             projectileModel.ApplyDisplay<BallProjectileDisplay>();
