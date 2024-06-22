@@ -25,11 +25,19 @@ namespace FootballerMonkeyMod.Display {
             }
         }
     }
+
     internal class BallProjectileDisplay : ModDisplay {
         public override string BaseDisplay => Generic2dDisplay;
 
         public override void ModifyDisplayNode(UnityDisplayNode node) {
             Set2DTexture(node, "BallProjectileDisplay");
+        }
+    }
+    internal class HotBallProjectileDisplay : ModDisplay {
+        public override string BaseDisplay => Generic2dDisplay;
+
+        public override void ModifyDisplayNode(UnityDisplayNode node) {
+            Set2DTexture(node, "HotBallProjectileDisplay");
         }
     }
 

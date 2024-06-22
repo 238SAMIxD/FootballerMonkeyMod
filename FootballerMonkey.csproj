@@ -21,7 +21,6 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
-		<Folder Include="TopPath\" />
 		<Folder Include="MidPath\" />
 		<Folder Include="BotPath\" />
 	</ItemGroup>

@@ -22,10 +22,10 @@ namespace FootballerMonkeyMod.TopPath.SwiftMoves
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             var attackModel = towerModel.GetAttackModel();
-            var weaponModel = towerModel.GetWeapon(); // You can change this is towerModel.GetAttackModel().weapons[0];
+            var weaponModel = towerModel.GetWeapon();
             var projectileModel = weaponModel.projectile;
 
-            weaponModel.rate *= 0.5f;
+            weaponModel.rate *= 0.75f;
         }
     }
 }
