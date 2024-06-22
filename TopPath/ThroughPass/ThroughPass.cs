@@ -15,7 +15,7 @@ namespace FootballerMonkeyMod.TopPath.ThroughPass {
 
         public override int Cost => 500;
 
-        public override string Description => "Gives much pierce and some damage";
+        public override string Description => "Gives much pierce and some damage.";
 
         public override void ApplyUpgrade(TowerModel towerModel) {
             var attackModel = towerModel.GetAttackModel();

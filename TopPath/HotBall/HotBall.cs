@@ -18,7 +18,7 @@ namespace FootballerMonkeyMod.TopPath.HotBall {
 
         public override int Cost => 400;
 
-        public override string Description => "Can pop lead bloons. Adds damage and pierce";
+        public override string Description => "Can pop lead bloons. Adds damage and pierce.";
 
         public override void ApplyUpgrade(TowerModel towerModel) {
             var attackModel = towerModel.GetAttackModel();

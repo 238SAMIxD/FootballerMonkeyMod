@@ -4,24 +4,21 @@ using FootballerMonkeyMod.Display;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.TowerSets;
 
-namespace FootballerMonkeyMod
-{
-    internal class FootballerMonkey : ModTower
-    {
+namespace FootballerMonkeyMod {
+    internal class FootballerMonkey : ModTower {
         public override TowerSet TowerSet => TowerSet.Primary;
 
-        public override string BaseTower => TowerType.DartMonkey; // You can replace TowerType.SuperMonkey with "SuperMonkey" or "SuperMonkey-005"
+        public override string BaseTower => TowerType.DartMonkey;
 
         public override int Cost => 500;
 
         public override string Description => "Play the ball";
 
-        public override string DisplayName => "Footballer Monkey"; // This is by default Example Monkey as the Mod Helper automatically puts spaces in-between the uppercase letters in the class name, it is this way for Towers, Heroes, Upgrades, and Paragons
+        public override string DisplayName => "Footballer Monkey";
 
-        public override void ModifyBaseTowerModel(TowerModel towerModel)
-        {
+        public override void ModifyBaseTowerModel(TowerModel towerModel) {
             var attackModel = towerModel.GetAttackModel();
-            var weaponModel = towerModel.GetWeapon(); // You can change this is towerModel.GetAttackModel().weapons[0];
+            var weaponModel = towerModel.GetWeapon();
             var projectileModel = weaponModel.projectile;
 
             // range
