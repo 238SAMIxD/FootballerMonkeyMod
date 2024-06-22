@@ -10,8 +10,10 @@ using FootballerMonkeyMod.Display;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2Cpp;
 
-namespace FootballerMonkeyMod.TopPath.HotBall {
-    internal class HotBall : ModUpgrade<FootballerMonkey> {
+namespace FootballerMonkeyMod.Upgrade.TopPath.HotBall
+{
+    internal class HotBall : ModUpgrade<FootballerMonkey>
+    {
         public override int Path => TOP;
 
         public override int Tier => 2;
@@ -20,7 +22,8 @@ namespace FootballerMonkeyMod.TopPath.HotBall {
 
         public override string Description => "Can pop lead bloons. Adds damage and pierce.";
 
-        public override void ApplyUpgrade(TowerModel towerModel) {
+        public override void ApplyUpgrade(TowerModel towerModel)
+        {
             var attackModel = towerModel.GetAttackModel();
             var weaponModel = towerModel.GetWeapon();
             var projectileModel = weaponModel.projectile;

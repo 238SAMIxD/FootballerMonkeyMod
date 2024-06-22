@@ -7,7 +7,7 @@ using Il2CppAssets.Scripts.Unity;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using static FootballerMonkeyMod.FootballerMonkeyMod;
 
-namespace FootballerMonkeyMod.TopPath.SwiftMoves
+namespace FootballerMonkeyMod.Upgrade.TopPath.SwiftMoves
 {
     internal class SwiftMoves : ModUpgrade<FootballerMonkey>
     {

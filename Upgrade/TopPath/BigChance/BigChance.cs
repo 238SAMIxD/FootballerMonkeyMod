@@ -9,8 +9,10 @@ using static FootballerMonkeyMod.FootballerMonkeyMod;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
 
-namespace FootballerMonkeyMod.TopPath.ThroughPass {
-    internal class BigChance : ModUpgrade<FootballerMonkey> {
+namespace FootballerMonkeyMod.Upgrade.TopPath.BigChance
+{
+    internal class BigChance : ModUpgrade<FootballerMonkey>
+    {
         public override int Path => TOP;
 
         public override int Tier => 4;
@@ -19,7 +21,8 @@ namespace FootballerMonkeyMod.TopPath.ThroughPass {
 
         public override string Description => "Adds damage and bounce.";
 
-        public override void ApplyUpgrade(TowerModel towerModel) {
+        public override void ApplyUpgrade(TowerModel towerModel)
+        {
             var attackModel = towerModel.GetAttackModel();
             var weaponModel = towerModel.GetWeapon();
             var projectileModel = weaponModel.projectile;

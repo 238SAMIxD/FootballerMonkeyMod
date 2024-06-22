@@ -7,8 +7,10 @@ using Il2CppAssets.Scripts.Unity;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using static FootballerMonkeyMod.FootballerMonkeyMod;
 
-namespace FootballerMonkeyMod.TopPath.ThroughPass {
-    internal class ThroughPass : ModUpgrade<FootballerMonkey> {
+namespace FootballerMonkeyMod.Upgrade.TopPath.ThroughPass
+{
+    internal class ThroughPass : ModUpgrade<FootballerMonkey>
+    {
         public override int Path => TOP;
 
         public override int Tier => 3;
@@ -17,7 +19,8 @@ namespace FootballerMonkeyMod.TopPath.ThroughPass {
 
         public override string Description => "Gives much pierce and some damage.";
 
-        public override void ApplyUpgrade(TowerModel towerModel) {
+        public override void ApplyUpgrade(TowerModel towerModel)
+        {
             var attackModel = towerModel.GetAttackModel();
             var weaponModel = towerModel.GetWeapon();
             var projectileModel = weaponModel.projectile;
