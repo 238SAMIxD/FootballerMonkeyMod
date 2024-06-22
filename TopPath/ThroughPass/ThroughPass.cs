@@ -6,19 +6,16 @@ using Il2CppAssets.Scripts.Models.Towers.Behaviors.Abilities;
 using Il2CppAssets.Scripts.Unity;
 using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using static FootballerMonkeyMod.FootballerMonkeyMod;
-using FootballerMonkeyMod.Display;
-using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
-using Il2Cpp;
 
-namespace FootballerMonkeyMod.TopPath.HotBall {
-    internal class HotBall : ModUpgrade<FootballerMonkey> {
+namespace FootballerMonkeyMod.TopPath.ThroughPass {
+    internal class ThroughPass : ModUpgrade<FootballerMonkey> {
         public override int Path => TOP;
 
-        public override int Tier => 2;
+        public override int Tier => 3;
 
-        public override int Cost => 400;
+        public override int Cost => 500;
 
-        public override string Description => "Can pop lead bloons. Adds damage and pierce";
+        public override string Description => "Gives much pierce and some damage";
 
         public override void ApplyUpgrade(TowerModel towerModel) {
             var attackModel = towerModel.GetAttackModel();
@@ -26,9 +23,7 @@ namespace FootballerMonkeyMod.TopPath.HotBall {
             var projectileModel = weaponModel.projectile;
 
             projectileModel.GetDamageModel().damage += 1;
-            projectileModel.pierce += 1;
-            projectileModel.GetDamageModel().immuneBloonProperties &= ~BloonProperties.Lead;
-            projectileModel.ApplyDisplay<HotBallProjectileDisplay>();
+            projectileModel.pierce += 6;
         }
     }
 }
